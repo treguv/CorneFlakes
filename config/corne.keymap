@@ -28,7 +28,7 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // | `    |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| F1  | F2  | F3  | F4  | F5  |   | LFT | DWN |  UP | RGT |     |      |
+// | CTRL| F1  | F2  | F3  | F4  | F5  |   | LFT | DWN |  UP | RGT |     |      |
 // | SHFT |  F6 |  F7 |  F8 | F9  | F10 |   | F11 | F12 |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
@@ -42,12 +42,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ~   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |  BT1| BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | BT CLR |  BT1| BT2 | BT3 | BT4 | BT5 |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" | ENT  |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TILDE   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &bt BT_CLR &bt_SEL 0   &BT_SEL 1 &BT_SEL 2   &BT_SEL_3   &BT_SEL_4      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+   &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2   &bt BT_SEL_3   &bt BT_SEL_4  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp ENTER
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
