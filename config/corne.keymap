@@ -54,3 +54,39 @@
                 };
         };
 };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_open_curly {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp LBRC>;
+        };
+        combo_closed_curly {
+            timeout-ms = <50>;
+            key-positions = <19,20>;
+            bindings = <&kp RBRC>;
+        };
+        combo_open_square{
+            timeout-ms = <50>;
+            key-positions = <27,28>;
+            bindings = <&kp LBKT>;
+        };
+        combo_closed_square{
+            timeout-ms = <50>;
+            key-positions = <31,32>;
+            bindings = <&kp RBKT>;
+        };
+        combo_open_par{
+            timeout-ms = <50>;
+            key-positions = <27,28,37>;
+            bindings = <&kp LPAR>;
+        };
+        combo_closed_par{
+            timeout-ms = <50>;
+            key-positions = <31,32,40>;
+            bindings = <&kp RPAR>;
+        };
+    };
+};
